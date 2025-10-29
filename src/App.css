@@ -1,0 +1,33 @@
+/* personnalisation de scroll */
+/* Scrollbar light mode */
+  .tontine-scroll::-webkit-scrollbar {
+    width: 6px !important;
+    background: #f3f4f6 !important; /* bg-gray-100 */
+  }
+  .tontine-scroll::-webkit-scrollbar-thumb {
+    background: #6366f1 !important; /* bg-indigo-500 */
+    border-radius: 2px !important;
+  }
+  .tontine-scroll::-webkit-scrollbar-thumb:hover {
+    background: #a5b4fc !important; /* bg-indigo-300 */
+  }
+
+  /* Scrollbar dark mode */
+  .dark .tontine-scroll::-webkit-scrollbar {
+    background: #1e293b !important; /* bg-blue-950 or dark bg */
+  }
+  .dark .tontine-scroll::-webkit-scrollbar-thumb {
+    background: #818cf8 !important; /* indigo-400 */
+  }
+  .dark .tontine-scroll::-webkit-scrollbar-thumb:hover {
+    background: #6366f1 !important; /* indigo-500 */
+  }
+
+  /* Pour Firefox */
+  .tontine-scroll {
+    scrollbar-width: thin !important;
+    scrollbar-color: #6366f1 #f3f4f6 !important;
+  }
+  .dark .tontine-scroll {
+    scrollbar-color: #818cf8 #1e293b !important;
+  }
