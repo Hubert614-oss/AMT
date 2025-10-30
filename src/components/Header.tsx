@@ -103,75 +103,75 @@ const Header = ({ children }: HeaderProps) => {
         </div>
       </header>
       {/* main container */}
-      <div className="flex flex-1">
+      <div className="flex flex-1 ">
         {/* sidebar left */}
-        <aside className="w-64 bg-gray-100 dark:bg-gray-800 min-h-screen px-4">
+        <aside className="w-64 bg-gray-100 dark:bg-gray-800 min-h-screen px-4 shadow-lg">
           {/* sidebar content will go here */}
           <div className='flex items-center justify-center h-16 relative'>
-            <div className="inline-flex items-center z-50 justify-center w-28 h-28 absolute -top-12 text-xl text-teal-700 bg-gray-300 rounded-full">
-              <span className='font-bold text-4xl flex items-center justify-center'>HA</span>
-            </div>
-            {/* nom */}
-            <div className="absolute -bottom-9 text-center">
-              <span className="font-light text-md text-gray-800 dark:text-gray-200">Hubert Arlin</span>
-            </div>
-            {/* poste */}
-            <div className="absolute -bottom-15 text-center">
-              <span className="font-light text-gray-600 dark:text-gray-400">Développeur Frontend</span>
-            </div>
+        <div className="inline-flex items-center z-50 justify-center w-28 h-28 absolute -top-12 text-xl text-teal-700 bg-gray-300 rounded-full">
+          <span className='font-bold text-4xl flex items-center justify-center'>HA</span>
+        </div>
+        {/* nom */}
+        <div className="absolute -bottom-9 text-center">
+          <span className="font-light text-md text-gray-800 dark:text-gray-200">Hubert Arlin</span>
+        </div>
+        {/* poste */}
+        <div className="absolute -bottom-15 text-center">
+          <span className="font-light text-gray-600 dark:text-gray-400">Développeur Frontend</span>
+        </div>
           </div>
           {/* matricule et num tel */}
           <div className='w-full pt-27 text-sm text-gray-600 dark:text-gray-400 flex flex-col gap-1 border-b border-gray-300 pb-3'>
-            Matricule : 123456789
-            <p>034 44 747 95</p>
+        Matricule : 123456789
+        <p>034 44 747 95</p>
           </div>
           {/* contrat */}
           <div className='w-full pt-3 text-sm text-gray-600 dark:text-gray-400 flex flex-col gap-1 border-b border-gray-300 pb-3'>
-            <span className='text-teal-800 font-bold'>CONTRAT</span>
-            <p>CDI - Temps plein</p>
+        <span className='text-teal-800 font-bold'>CONTRAT</span>
+        <p>CDI - Temps plein</p>
           </div>
           {/* Lider */}
           <div className='w-full pt-3 text-sm text-gray-600 dark:text-gray-400 flex flex-col gap-1 border-b border-gray-300 pb-3'>
-            <span className='text-teal-800 font-bold'>LIDER</span>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
-              JD
-              </div>
-              <p className='font-bold'>John Doe</p>
-            </div>
-            <p className='ml-7.5'>Developpeur Lider Frontend</p>
+        <span className='text-teal-800 font-bold'>LIDER</span>
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
+          JD
+          </div>
+          <p className='font-bold'>John Doe</p>
+        </div>
+        <p className='ml-7.5'>Developpeur Lider Frontend</p>
           </div>
           {/* relations directes */}
           <div className='w-full pt-3 text-sm text-gray-600 dark:text-gray-400 flex flex-col gap-1'>
-            <span className='text-teal-800 font-bold'>RELATIONS DIRECTES</span>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
-              AS
-              </div>
-              <p className='font-bold'>Alice Smith</p>
-            </div>
-            <p className='ml-7.5'>HR Manager</p>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
-              FA
-              </div>
-              <p className='font-bold'>Fabiech</p>
-            </div>
-            <p className='ml-7.5'>HR Manager</p>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
-              HE
-              </div>
-              <p className='font-bold'>Henitsoa</p>
-            </div>
-            <p className='ml-7.5'>HR Manager</p>
+        <span className='text-teal-800 font-bold'>RELATIONS DIRECTES</span>
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
+          AS
+          </div>
+          <p className='font-bold'>Alice Smith</p>
+        </div>
+        <p className='ml-7.5'>HR Manager</p>
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
+          FA
+          </div>
+          <p className='font-bold'>Fabiech</p>
+        </div>
+        <p className='ml-7.5'>HR Manager</p>
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 bg-linear-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-medium text-xs">
+          HE
+          </div>
+          <p className='font-bold'>Henitsoa</p>
+        </div>
+        <p className='ml-7.5'>HR Manager</p>
           </div>
         </aside>
 
         {/* main content area */}
         <main className="flex-1">
           <div className='p-4'>
-            {children}
+        {children}
           </div>
         </main>
       </div>

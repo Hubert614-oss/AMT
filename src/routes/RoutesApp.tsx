@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import Header from '../components/Header'
-import ViewPage from '../pages/view'
+import Demandes from '../pages/demandes'
 
 
 const AppRoutes = () => (
@@ -16,10 +16,10 @@ const AppRoutes = () => (
     />
     {/*  */}
     <Route
-      path="/views"
+      path="/demandes"
       element={
         <Header >
-          <ViewPage />
+          <Demandes />
         </Header>
       }
     />
