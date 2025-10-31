@@ -1,11 +1,18 @@
-import { type ReactNode } from 'react';
-import AddUserModal from './AddUserModal';
+import { type ReactNode, useState } from 'react';
+import AddDemandeModal from './AddDemandeModal';
 
 interface HeaderProps {
   children: ReactNode;
 }
 
 const Header = ({ children }: HeaderProps) => {
+  const [isDemandeModalOpen, setIsDemandeModalOpen] = useState(false);
+
+  const handleAddDemande = (demandeData: any) => {
+    console.log('Nouvelle demande:', demandeData);
+    // Ici vous pouvez ajouter la logique pour sauvegarder la demande
+  };
+
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-gray-400 dark:border-gray-800 bg-white dark:bg-gray-900/80 ">
@@ -86,12 +93,15 @@ const Header = ({ children }: HeaderProps) => {
           {/* Partie droite - prend tout l'espace restant */}
           <div className='flex-1 px-4 flex items-center justify-between h-full'>
             <div className='flex gap-9'>
-              <a href="">Accueil</a>
-              <a href="" className='border-b border-amber-50'>Demandes</a>
+              <a href="/" className={`hover:border-b hover:border-amber-50 transition-all ${window.location.pathname === '/' ? 'border-b border-amber-50' : ''}`}>Accueil</a>
+              <a href="/demandes" className={`hover:border-b hover:border-amber-50 transition-all ${window.location.pathname === '/demandes' ? 'border-b border-amber-50' : ''}`}>Demandes</a>
             </div>
             {/*  */}
             <div className='justify-end'>
-              <button className='bg-white text-teal-700 px-4 py-1 font-light cursor-pointer hover:bg-gray-100 transition flex items-center gap-2'>
+              <button 
+                onClick={() => setIsDemandeModalOpen(true)}
+                className='bg-white text-teal-700 px-4 py-1 font-light cursor-pointer hover:bg-gray-100 transition flex items-center gap-2'
+              >
                 {/* Icône SVG + */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -99,6 +109,14 @@ const Header = ({ children }: HeaderProps) => {
                 {/* Texte masqué sur mobile */}
                 <span className="hidden sm:inline">Creer une demande</span>
               </button>
+              
+              {/* Modal AddDemandeModal */}
+              <AddDemandeModal
+                isOpen={isDemandeModalOpen}
+                onClose={() => setIsDemandeModalOpen(false)}
+                onSubmit={handleAddDemande}
+              />
+              
               {/* Modal */}
               {/* <AddUserModal
                 isOpen={isModalOpen}
