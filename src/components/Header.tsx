@@ -133,7 +133,7 @@ const Header = ({ children }: HeaderProps) => {
         <aside className="w-64 bg-gray-100 dark:bg-gray-800 min-h-screen px-4 border-r border-gray-300">
           {/* sidebar content will go here */}
           <div className='flex items-center justify-center h-16 relative'>
-            <div className="inline-flex items-center z-50 justify-center w-28 h-28 absolute -top-12 text-xl text-teal-700 bg-gray-300 rounded-full">
+            <div className="inline-flex items-center z-10 justify-center w-28 h-28 absolute -top-12 text-xl text-teal-700 bg-gray-300 rounded-full">
               <span className='font-bold text-4xl flex items-center justify-center'>HA</span>
             </div>
             {/* nom */}
